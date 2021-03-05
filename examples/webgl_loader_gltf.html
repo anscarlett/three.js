@@ -12,8 +12,10 @@
 			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - GLTFLoader<br />
 			Garden Decking Planters by
 			<a href="https://github.com/anscarlett" target="_blank" rel="noopener">Adrian Scarlett</a><br />
-			<a href="https://hdrihaven.com/hdri/?h=venice_sunset" target="_blank" rel="noopener">Venice Sunset</a> by <a href="https://hdrihaven.com/" target="_blank" rel="noopener">HDRI Haven</a>
-		</div>
+			<!--
+			<a href="https://hdrihaven.com/hdri/?h=venice_sunset" target="_blank" rel="noopener">Venice Sunset</a> by <a href="https://hdrihaven.com/" target="_blank" rel="noopener">HDRI Haven</a>-->
+		
+</div>
 
 		<script type="module">
 
@@ -37,8 +39,8 @@
 				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.25, 20 );
 				camera.position.set( - 1.8, 0.6, 2.7 );
 
-				scene = new THREE.Scene();
-
+				scene = new THREE.Scene();<!--
+<!--
 				new RGBELoader()
 					.setDataType( THREE.UnsignedByteType )
 					.setPath( 'textures/equirectangular/' )
@@ -81,7 +83,7 @@
 
 						} );
 
-					} );
+					} );-->
 
 				renderer = new THREE.WebGLRenderer( { antialias: true } );
 				renderer.setPixelRatio( window.devicePixelRatio );
